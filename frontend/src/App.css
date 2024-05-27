@@ -1,0 +1,111 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  max-width: 1400px;
+}
+
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.commentsubject {
+  font-weight: 700;
+}
+
+.topicslist {
+  display: flex;
+}
+
+.topic {
+  border: 0.5px solid white;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+  width: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.comment {
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+p {
+  font-size: 14px;
+}
+
+.postcomment {
+  display: flex;
+  flex-direction: column;
+
+  #comment {
+    width: 80%;
+  }
+  p {
+    margin-left: 10px;
+  }
+
+}
+
+button, input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 8px;
+
+  &.delete {
+    font-size: 12px;
+    text-align: right;
+    background-color: #1a1a1a;
+    align-items: end;
+    margin: 10px 0 0 0;
+
+    &:hover {
+      border-color: rgba(165, 3, 44, 0.795);
+    }
+  }
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.comment {
+  form{
+    display:flex;
+    justify-content: right;
+  }
+}
+
+
